@@ -1,0 +1,34 @@
+.conatainer-oval {
+  position: relative;
+  overflow: hidden;
+  .oval-first {
+    position: absolute;
+    width: 382px;
+    height: 382px;
+    background: $orangeGrad;
+    border-radius: $radiusImg;
+    z-index: -1;
+    top: 170px;
+    right: -230px;
+  }
+  .oval-second {
+    position: absolute;
+    width: 288px;
+    height: 288px;
+    background: $purpleGrad;
+    border-radius: $radiusImg;
+    z-index: -2;
+    top: 10px;
+    left: -30px;
+  }
+  .oval-second__smole {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    background: $orangeGrad;
+    border-radius: $radiusImg;
+    z-index: -1;
+    top: 220px;
+    left: 165px;
+  }
+}

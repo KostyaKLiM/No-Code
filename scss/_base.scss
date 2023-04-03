@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: $ffMain;
+  background: $white;
+}
+.container {
+  max-width: $container;
+  padding: 0 20px;
+  margin-inline: auto;
+}
+section{
+  max-width: $section;
+  margin-inline: auto;
+  overflow: hidden;
+}
+.btn {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  &__primary{
+background: $purpleGrad;
+border-radius: $radiusRound;
+padding: 15px 30px;
+@include text($ffMain, 16px, 20px, 700, $white);
+  }
+}
+
+.material-icons {
+  cursor: pointer;
+}

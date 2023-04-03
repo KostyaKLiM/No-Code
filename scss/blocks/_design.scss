@@ -1,0 +1,52 @@
+.design {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
+  &-oval {
+    position: absolute;
+    width: 355px;
+    height: 355px;
+    background: $purpleGrad;
+    border-radius: $radiusImg;
+    top: 0;
+    right: -200px;
+	 z-index: -1;
+    &__smole {
+      position: absolute;
+      width: 123px;
+      height: 123px;
+      background: $orangeGrad;
+      border-radius: $radiusImg;
+      top: 0px;
+      right: 31px;
+		z-index: -1;
+    }
+  }
+  &-desc {
+    @include text($ffAdd, 12px, 15px, 700, $purpleGrad);
+    text-align: center;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    background: $orangeGrad;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    border-radius: 33px;
+    padding: 8px 35px;
+  }
+  &-title {
+    @include text($ffAdd, 46px, 56px, 700, $darkBlue);
+    padding-top: 50px;
+    max-width: 650px;
+    text-align: center;
+  }
+  &-btn {
+    @include text($ffMain, 20px, 25px, 700, $white);
+    background: $purpleGrad;
+    border-radius: 33px;
+    padding: 21px 49px;
+    margin-top: 30px;
+  }
+}

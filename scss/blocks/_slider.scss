@@ -1,0 +1,56 @@
+.slider {
+width: 100%;
+height: 100%;
+background: $purpleGrad;
+.slider-title {
+	@include text($ffAdd, 46px, 56px, 700, $white);
+text-align: center;
+	margin-inline: auto;
+	padding-top: 120px;
+}
+.slider-desc {
+	@include text($ffMain, 20px, 30px, 400, $white);
+	margin-inline: auto;
+text-align: center;
+mix-blend-mode: normal;
+opacity: 0.8;
+max-width: 560px;
+padding-top: 20px;
+}
+.owl-carousel {
+}
+.owl-theme {
+margin: 100px 0 120px 160px;
+}
+.item {
+	background: rgba(76, 0, 112, 0.195968);
+border-radius: 20px;
+padding: 50px 40px 40px 50px;
+}
+.item-card {
+}
+.card-coment {
+	@include text($ffMain, 20px, 30px, 400, $white);
+	max-width: 460px;
+}
+.card-user {
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+	gap: 14px;
+}
+.user-photo img{
+}
+.user-info {
+		&__name {
+			@include text($ffMain, 16px, 20px, 700, $white);
+		}
+		&__prof {
+			@include text($ffMain, 16px, 20px, 400, $white);
+mix-blend-mode: normal;
+opacity: 0.8;
+padding-top: 4px;
+		}
+}
+
+}

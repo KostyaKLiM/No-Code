@@ -1,0 +1,50 @@
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1150px;
+  height: 172px;
+  background: $white;
+  border: 1px solid #e7eaeb;
+  border-radius: 21px;
+  margin: 100px auto;
+  .statistics-students {
+    display: block;
+    @include text($ffAdd, 40px, 50px, 700, $darkBlue);
+    text-align: center;
+    padding-left: 130px;
+    .students-span {
+      display: block;
+      @include text($ffMain, 16px, 20px, 400, $darkGreyBlue);
+      text-align: center;
+    }
+  }
+  .statistics-lectures {
+    display: block;
+    @include text($ffAdd, 40px, 50px, 700, $darkBlue);
+    text-align: center;
+    .lectures-span {
+      display: block;
+      @include text($ffMain, 16px, 20px, 400, $darkGreyBlue);
+      text-align: center;
+    }
+  }
+  .statistics-stars {
+    display: block;
+    @include text($ffAdd, 40px, 50px, 700, $darkBlue);
+    text-align: center;
+    padding-right: 130px;
+    .stars-span {
+      display: block;
+      @include text($ffMain, 16px, 20px, 400, $darkGreyBlue);
+      text-align: center;
+    }
+  }
+  .statistics-line {
+    vertical-align: middle;
+    margin: auto;
+    padding: 1px;
+    height: 112px;
+    background: #e7eaeb;
+  }
+}
